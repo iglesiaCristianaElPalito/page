@@ -1,0 +1,576 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+header .contenedor {
+  display: flex; /* <-- coloca los elementos al lado*/
+  justify-content: space-between; /* justificar*/
+}
+
+header ul{
+  display: flex;
+}
+
+header ul li {
+  list-style: none;
+  margin-right: 15px;
+}
+
+header ul li {
+  margin-right: 50px;
+}
+
+header a, .texto a, #blog a, #que-esperas a {
+  text-decoration: none;
+}
+
+.contenedor {
+  max-width: 1280px;
+  width: 90%;
+  margin: auto;
+}
+
+header { /*propiedades de fondo*/
+  /*esa linear-gradient es para colocarle el gradient azul encima de la imagen*/
+  background: linear-gradient(rgba(84, 93, 220, 0.8), rgba(96,171,245,0.8)), url(../imagenes/montaña.jpg);
+  height: 100vh;
+  background-size: cover;
+}
+
+#contenedor-titulo-flex {
+  display: flex;
+  justify-content: center;
+  margin: 18vh 0; /*este vh es adaptado al dispositivo*/
+  /*esto es para q no afecte los estilos del .contenedor*/
+  max-width: 1880px;
+  width: 100%;
+}
+
+h1 {
+  font-size: 60px;
+  color: #fff;
+  margin: 0;
+  font-family: 'Dancing Script', cursive;
+}
+
+.contenedor-titulo  h2 {
+  font-size: 20px;
+  color: #fff;
+}
+
+.contenedor-titulo {
+  text-align: center;
+}
+
+.contenedor-titulo a, #sobre-mi a, #blog a, #que-esperas a, #contacto input[type="submit"] {
+  border-radius: 7px;
+  font-size: 1rem;
+  color: #fff;
+  background: #5197cc;
+  padding: 14px 24px;
+  display: inline-block; /*elemento en linea, no agarra estilos como los bloques, excepto si se les añade este inline-block*/
+}
+
+.boton{
+border-radius: 27px !important;
+  font-size: 1rem;
+  color: #fff;
+  background: transparent !important;
+  border:2px solid #fff;
+  padding: 14px 24px;
+  display: inline-block; /*elemento en linea, no agarra estilos como los bloques, excepto si se les añade este inline-block*/
+}
+.boton:hover {
+  background: #fff !important;
+  color: rgb(62, 79, 179);
+}
+
+
+
+p.logo {
+  color: #fff;
+  font-size: 1.5rem;
+  font-family: 'Dancing Script', cursive;
+}
+
+nav ul li a {
+  color: #fff;
+}
+
+/* SECCION DE SOBRE MI */
+h3 {
+  text-align: center;
+  font-size: 55px;
+  font-weight: normal;
+}
+
+#sobre-mi .contenedor-sobremi{
+  display: flex;
+  justify-content: space-around;
+}
+
+#sobre-mi .texto {
+  width: 45%;
+}
+
+/* SECCION SERVICIOS */
+
+.contenedor-servicios {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  color: #fff;
+}
+
+.servicio {
+  width: 24%;
+  padding: 34px 30px 38px 30px;
+  border-radius: 10px;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.servicio h4 {
+  font-size: 30px;
+  margin: 0;
+}
+
+.servicio p {
+  margin-bottom: 20px;
+  height: 194px; /* alto de los iconos, para q esten al mismo nivel*/
+}
+
+.contenedor-servicios .violeta {
+  background-image: linear-gradient(to top, #5055df, #6d68f3);
+  box-shadow: 0 12px 30px 0 rgba(80, 85, 223, 0.37);
+}
+
+.contenedor-servicios .celeste {
+  background-image: linear-gradient(to top, #40a8f9, #5cb8ff);
+  box-shadow: 0 12px 30px 0 rgba(86, 163, 222, 0.3);
+}
+
+.ondas {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.icono {
+  float: right;
+}
+
+/* SECCION DE MIS TRABAJOS */
+
+button.owl-next,  button.owl-prev{
+    font-size: 40px !important;
+}
+
+span {
+  color: #55b2fa;
+}
+
+/* SECCION DE MIS TRABAJOS */
+
+.contenedor-trabajar {
+  display: flex; /*colocarlos uno al lado del otro*/
+  flex-wrap: wrap; /*si ocupa mucho espacio, baja el item*/
+  justify-content: space-around;
+}
+
+#por-que-trabajar .item {
+  width: 28%;
+  text-align: center;
+}
+
+#por-que-trabajar ul li {
+  list-style: none;
+}
+                /* buscamos el hijo 2 de li*/
+#por-que-trabajar ul li:nth-child(2) {
+  font-weight: bold;
+  font-size: 19px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+#por-que-trabajar ul li:nth-child(3) {
+  line-height: 31px; /*interlineado*/
+}
+
+/* SECCION BLOG */
+
+#blog {
+  background: #f9fafc;
+}
+
+#blog .contenedor-publicaciones{
+  display: flex;
+  justify-content: space-around;
+}
+
+#blog .publicacion {
+  width: 30%;
+  box-shadow: 1px 1px 14px #ccc; /*sombreado de la caja*/
+}
+
+#blog img {
+  width: 100%;
+}
+
+#blog .contenido {
+  background: #fff;
+  padding: 20px;
+}
+
+#blog h4 {
+  font-size: 23px;
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+#blog p {
+  color: #5a6169;
+  line-height: 24px;
+  font-size: 16px;
+}
+
+/* SECCION QUE ESPERAS*/
+
+#que-esperas {
+  background: linear-gradient(rgba(84, 93, 220, 0.94), rgba(96, 171, 245, .9));
+  text-align: center;
+  padding: 50px;
+  margin-top: 50px;
+}
+
+#que-esperas h3 {
+  font-size: 30px;
+  color: #fff;
+}
+
+
+/* SECCION CONTACTO */
+
+#contacto form {
+  display: flex;
+  justify-content: space-between; /* separa los elementos*/
+  flex-wrap: wrap; /*los pone del mismo tamaño*/
+  width: 77%;
+  margin: auto; /* centra los elementos (align = center)*/
+}
+
+input[type="text"], input[type="email"] {
+  width: 49%;
+  margin-bottom: 15px;
+  padding: 18px 0; /*18px arriba y abajo, 0px a los lados*/
+  border: 0;
+  border-bottom: 1px solid #5cb8ff; /* estilos de la linea*/
+  font-size: 17px;
+  font-family: 'Poppins', sans-serif;
+}
+
+textarea {
+  padding: 18px 0;
+  border: 0;
+  border-bottom: 1px solid #5cb8ff; /* estilos de la linea*/
+  font-size: 17px;
+  margin-bottom: 40px;
+  font-family: 'Poppins', sans-serif;
+  width: 100%;
+}
+
+#contacto input[type="submit"] {
+  margin: auto;
+  font-family: 'Poppins', sans-serif;
+}
+
+.contacto-info {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 60px;
+}
+
+.contacto-info img {
+  width: 28px;
+  vertical-align: middle; /* si la imagen queda mas arriba, la alinea al medio con el txto*/
+  margin-right: 10px;
+}
+
+/* SECCION FOOTER*/
+footer {
+  padding: 40px;
+  background: #2F2F2F;
+  text-align: center;
+  margin-top: 40px;
+}
+
+footer .contenedor {
+  display: flex;
+  justify-content: center;
+  flex-direction: column; /*el contenido los coloca uno debajo del otro*/
+}
+
+footer img {
+  margin: 0 40px;
+  transform: rotate(0); /*hace la rotacion de la imagen*/
+  transition: 0.4s; /* hace q la imagen rote a 0.4segundos*/
+}
+
+footer img:hover {
+  transform: rotate(360deg); /*rota a 360 en 0.4 segundos (deg = grados)*/
+  transition: 0.4s;
+}
+
+footer p {
+  color: #fff !important;
+  margin-top: 40px;
+}
+
+/* ICONO WHATSAPP FIJO*/
+#whatsapp {
+  position: fixed;
+  top: 90%;
+  right: 1%;
+}
+
+/* comportamiento del scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/*Evitar que el nav tape los titulares */
+#mis-trabajos, #sobre-mi, #por-que-trabajar, #servicios {
+  padding: 40px 0;
+}
+
+/* HACEMOS LA PARTE PARA MOBILES */
+.menu-icon {
+  display: none;
+}
+
+@media (max-width: 800px){ /* <-- ancho maximo 800px aplica para tablets y cels (480px solo cel)*/
+/* programamos aqui dentro los estilos */
+  p.logo {
+    font-size: 17px;
+  }
+
+  .mi-nombre {
+    font-size: 2.5rem;
+    margin-top: 53px;
+    font-family: 'Dancing Script', cursive;
+  }
+
+  .menu-icon {
+    display: block;
+    float: right;
+    width: 35px;
+    height: 22px;
+    /* margin-top: 20px; */
+  }
+
+  header nav {
+    position: absolute;
+    top: 58px;
+    left: 0;
+    height: 220px;
+    background: #5cb8ff;
+    width: 100%;
+    display: none;
+    padding-top: 1rem;
+    opacity: .75;
+  }
+
+  header nav ul {
+    flex-direction: column;
+  }
+
+  header nav ul li {
+    margin-bottom: 15px;
+  }
+
+  h1 {
+    font-size: 45px;
+  }
+
+  h2 {
+    font-size: 19px;
+  }
+
+  /* seccion sobre mi */
+
+  #sobre-mi .contenedor-sobremi{
+    flex-direction: column; /*elementos uno bajo el otro*/
+  }
+  #sobre-mi img {
+    width: 100%;
+  }
+
+  #sobre-mi .texto {
+    width: 100%;
+  }
+
+  /* seccion servicios */
+  #servicios .contenedor-servicios {
+    flex-direction: column; /*elementos uno bajo el otro*/
+  }
+
+  .servicio {
+    width: 82%;
+    padding: 34px 30px 69px 30px;
+  }
+
+  .icono {
+    margin-top: 23px;
+  }
+
+  /* seccion mis trabajos */
+
+  #mis-trabajos h3 {
+    font-size: 50px;
+  }
+ /* seccion por-que-trabajar*/
+ #por-que-trabajar h3 {
+   font-size: 36px;
+ }
+
+#por-que-trabajar .contenedor-trabajar {
+  flex-direction: column;
+  width: 100%;
+}
+
+#por-que-trabajar .item {
+  width: 100%;
+}
+
+#por-que-trabajar .item ul {
+  padding: 0;
+}
+ /* seccion blog */
+#blog .contenedor-publicaciones {
+  flex-direction: column;
+}
+
+#blog .publicacion {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+/* seccion q esperas */
+#que-esperas .contenedor {
+  width: 100%;
+}
+
+#que-esperas h3 {
+  font-size: 26px;
+}
+ /* seccion contacto */
+#contacto h3 {
+  font-size: 50px;
+}
+
+ #contacto form {
+   flex-direction: column;
+   width: 100%;
+ }
+
+input[type="text"], input[type="email"] {
+  width: 100%;
+}
+
+#contacto .contacto-info {
+  flex-direction: column;
+  font-size: 16px;
+  margin-left: 15px;
+}
+
+#contacto .envio-msj {
+  font-size: 24px;
+}
+
+/* seccion footer */
+footer img {
+  margin: 0 10px;
+}
+
+footer .contenedor {
+  width: 100%;
+}
+
+footer p {
+  font-size: 15px;
+}
+
+/* whatsapp fixed*/
+  #whatsapp {
+    top: 89%;
+    z-index: 100;
+  }
+
+  #whatsapp img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+header nav { /*corrige el espacio entre el nav y header*/
+  /* margin-top: -25px; */
+}
+
+/* --- SECCION TABLET ---*/
+@media (min-width: 600px) and (max-width: 800px) {
+  p.logo {
+    font-size: 27px;
+  }
+
+  .menu-icon {
+    width: 54px;
+    height: 33px;
+    margin-top: 26px;
+}
+.mi-nombre {
+  font-size: 41px;
+  margin-top: 70px;
+  font-family: 'Dancing Script', cursive;
+}
+.contenedor-titulo h1{
+  font-family: 'Dancing Script', cursive;
+}
+.contenedor-titulo h2 {
+    font-size: 25px;
+}
+
+.contenedor-titulo a, #sobre-mi a, #blog a, #que-esperas a, #contacto input[type="submit"] {
+    font-size: 18px;
+}
+
+header ul li {
+  font-size: 17px;
+}
+
+#sobre-mi .texto {
+    font-size: 20px;
+}
+
+#whatsapp img {
+    width: 65px;
+    height: 65px;
+}
+
+#servicios .servicio {
+    width: 49%;
+    margin: auto;
+    margin-bottom: 30px;
+}
+#blog .publicacion {
+  width: 85%;
+  margin-bottom: 60px !important;
+  margin: auto;
+}
+
+footer p {
+    font-size: 18px;
+}
+
+}

@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.main-header{
+    background: url(../imagenes/fondo1.jpg);
+    background-size: cover;
+    min-height: 100vh;
+}
+
+
+header{
+    width: 100%;
+    /* background: blue; */
+    min-height: 100vh;
+}
+
+nav{
+    height: 70px;
+}
+
+.navbar-brand {
+    font-size: 2rem;
+  }
+
+.contenidoPrincipal{
+    height: calc(100vh - 70px);
+    padding: 0;
+    
+}
+
+.textP{
+    font-size: 24px;
+    margin: 15px;
+}
+
+.fondo-contenido{
+    background: rgba(223, 22, 172, 0.2);
+}
+
+.mockut{
+    object-fit: cover;
+    width: 40%;
+    max-height: 90vh;
+
+}
+
+.lista-menu{
+    margin-left: auto;
+}
+
+.contacto{
+    padding: 50px  0;
+    background:  linear-gradient(180deg, #30353b 0%, #1A1B1F 100%);
+    text-align: center;
+    border-right: 1px solid #313636;
+}
+
+.contactoOtro{
+    background: linear-gradient(180deg, #f8daf1 0%, #f57ac6 100%);
+    
+}
+
+.navbar{
+    box-shadow: 2px 2px 5px #000;
+    opacity: 0.4;
+}
+
+.navbar .nav-item .nav-link{
+    color: #000;
+    font-size: 20px;
+}
+
+.foo{
+    background: linear-gradient(180deg, #f790dd 0%, #f57ac6 100%);
+}
+
+.btn{
+    background: #bfc0c2;
+   
+}
+
+.servicios .btn{
+    background: #bfc0c2;
+    border: 0;
+}
+
+
+
+
+
